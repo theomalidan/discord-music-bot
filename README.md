@@ -12,4 +12,5 @@ A simple example of discord bot music.
 ### Run
 
 ```
-node index.js```
+node index.js
+```
