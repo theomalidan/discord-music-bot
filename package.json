@@ -1,0 +1,15 @@
+{
+  "name": "discord-music-bot",
+  "version": "1.0.0",
+  "description": "A simple example of discord bot music",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Sworder71",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "discord.js-ext": "^1.0.6"
+  }
+}
