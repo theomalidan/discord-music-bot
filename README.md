@@ -3,6 +3,7 @@ A simple example of discord bot music.
 
 ### Packages required:
 
+- FFMPEG - Packet Linux, npm
 - Discord.js - npm
 - Discord.js-ext - npm
 
