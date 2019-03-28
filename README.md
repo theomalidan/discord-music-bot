@@ -7,7 +7,7 @@ A simple example of discord bot music.
 - Discord.js-ext - npm
 
 ### Installation
-**Discord.js@11.4.2** and **Node.js@8.x** is necessary start and use this application.
+**Discord.js@11.4.2** and **Node.js@8.x** is necessary to start and use this application.
 
 ### Run
 
