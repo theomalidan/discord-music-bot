@@ -60,8 +60,8 @@ client.on('message', (message) => {
                 queue.push({ link: args.join(' '), author: message.author.tag });
                 return message.channel.send('☑ **<' + args.join(' ') + '>** is successfully added on the queue !')
             } else {
-                client.utils.play(client, message, args.join(' '));
                 queue.push({ link: args.join(' '), author: message.author.tag });
+                client.utils.play(client, message, args.join(' '));
             }
             break;
         case 'pause':
