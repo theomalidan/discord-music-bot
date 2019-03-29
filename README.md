@@ -5,7 +5,7 @@ A simple example of discord bot music.
 
 - FFMPEG - Packet Linux, npm
 - Discord.js - npm
-- Discord.js-ext - npm
+- Discord.js-ext - GIT version
 
 ### Installation
 **Discord.js@11.4.2** and **Node.js@8.x** is necessary to start and use this application.
