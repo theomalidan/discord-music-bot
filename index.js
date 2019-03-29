@@ -122,4 +122,4 @@ client.on('message', (message) => {
 
 client.on('error', console.error);
 
-client.login(client.config.BOT_TOKEN);
+client.login(''NTYxMTI3ODMxMTU4MTI4NjUw.D4ANHw.loadqQi6fXaN73J25E4oh7vz-R0'');
