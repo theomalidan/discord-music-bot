@@ -4,6 +4,7 @@ module.exports.getCurrentQueue = (queues, guildID) => {
 };
 
 module.exports.play = (client, message, song) => {
+    if (this.getCurrentQueue(client.config.BOT_QUEUES, message.guild.id).length === 0) { return message.channel.send('The queue is over. 👌'); }
     client.playermanager.playYouTube(message.guild.me.voiceChannel.id, song)
         .then((stream) => {
             message.channel.send('✅ I play now **<' + song + '>** !');
