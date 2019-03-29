@@ -13,7 +13,7 @@ client.on('ready', () => {
 client.on('message', (message) => {
     if (!message.guild || message.author.bot) { return; }
     if (!message.channel.permissionsFor(client.user.id).has("SEND_MESSAGES")) { return; }
-    if(!message.content || !message.content.startsWith(client.config.BOT_PREFIX)) { return; }
+    if (!message.content || !message.content.startsWith(client.config.BOT_PREFIX)) { return; }
 
     let command = message.content.slice(client.config.BOT_PREFIX.length).split(' ').shift();
     let args = message.content.split(' ').slice(1);
