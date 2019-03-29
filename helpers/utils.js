@@ -13,8 +13,9 @@ module.exports.play = (client, message, song) => {
             stream.on('end', () => {
                 if (this.getCurrentQueue(client.config.BOT_QUEUES, message.guild.id).length === 0) { return message.channel.send('The queue is over. 👌'); }
                 else {
+                    let nextSong = this.getCurrentQueue(client.config.BOT_QUEUES, message.guild.id)[0].link;
                     this.getCurrentQueue(client.config.BOT_QUEUES, message.guild.id).shift();
-                    this.play(client, message, this.getCurrentQueue(client.config.BOT_QUEUES, message.guild.id)[0].link);
+                    this.play(client, message, nextSong);
                 }
             });
         })
