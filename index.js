@@ -110,7 +110,7 @@ client.on('message', (message) => {
         case 'clear':
             if (!message.guild.me.voiceChannel) { return message.channel.send('⚠ I\'m not connected in any channel. Try `' + client.config.BOT_PREFIX + 'join` to join the bot.'); }
             if (queue.length === 0) { return message.channel.send('⚠ The queue is empty.'); }
-            queue.splice(0, queue.length);
+            queue.splice(1, queue.length);
             message.channel.send('✅ The queue is delete.');
             break;
         case 'help':
