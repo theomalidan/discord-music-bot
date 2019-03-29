@@ -44,6 +44,7 @@ client.on('message', (message) => {
         case 'leave':
             let channel = message.guild.me.voiceChannel;
             if (!channel) { return message.channel.send('⚠ I\'m not connected in any channel.'); }
+            if (queue.length > 0) { queue.splice(0, queue.length); }
             client.playermanager.leave(channel.id)
                 .then(() => {
                     return message.channel.send('✅ I successfully leaved **' + channel.toString() + '** !');
