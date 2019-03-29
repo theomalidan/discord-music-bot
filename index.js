@@ -22,9 +22,7 @@ client.on('message', (message) => {
             if (!args.join(' ')) {
                 if (message.member.voiceChannel) { channelName = message.member.voiceChannel.name; }
                 else { return message.channel.send('⚠ You must include a channelID or channelName.'); }
-            } else {
-                channelName = args.join(' ');
-            }
+            } else { channelName = args.join(' '); }
             client.utils.findChannel(message, channelName, 'voice')
                 .then((channel) => {
                    client.playermanager.join(channel.id)
